@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.ExistingAccountsController">
+   <children>
+      <Pane prefHeight="95.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="750.0" style="-fx-background-color: #459e2a;" text="1469 CBT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="usersTableView" focusTraversable="false" layoutX="15.0" layoutY="153.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="153.0">
+         <columns>
+            <TableColumn fx:id="firstNameTableColumn" minWidth="-Infinity" prefWidth="150.0" style="-fx-border-color: lightgray;" text="First Name" />
+            <TableColumn fx:id="lastNameTableColumn" minWidth="-Infinity" prefWidth="150.0" style="-fx-border-color: lightgray;" text="Last Name" />
+            <TableColumn fx:id="userNameTableColumn" minWidth="-Infinity" prefWidth="150.0" style="-fx-border-color: lightgray;" text="User Name" />
+            <TableColumn fx:id="genderTableColumn" minWidth="-Infinity" prefWidth="120.0" style="-fx-border-color: lightgray;" text="Gender" />
+            <TableColumn fx:id="dateCreatedTableColumn" prefWidth="150.0" style="-fx-border-color: lightgray;" text="Date Created" />
+         </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Label layoutX="208.0" layoutY="119.0" text="Please, Select your account from the Table below" textFill="#39642c">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="backArrowIcon" fill="#459e2a" glyphName="ARROW_CIRCLE_LEFT" layoutX="1.0" layoutY="125.0" onMouseClicked="#backArrowIconPressed" size="2.9em">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+   </children>
+</AnchorPane>

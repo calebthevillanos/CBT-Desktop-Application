@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.SignUpController">
+   <children>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="132.0" prefWidth="700.0" style="-fx-background-color: #459e2a;" text="1469 CBT SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="56.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpButton" layoutX="496.0" layoutY="400.0" mnemonicParsing="false" onAction="#signUpButtonPressed" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #459e2a;" text="SIGN UP" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox layoutX="388.0" layoutY="150.0">
+         <children>
+            <Label text="First Name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTextField" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" promptText="e.g Caleb" style="-fx-background-color: white; -fx-border-color: lightgray;" />
+            <Label fx:id="firstNameValidationLabel" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="388.0" layoutY="210.0">
+         <children>
+            <Label text="Last Name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTextField" focusTraversable="false" prefHeight="25.0" prefWidth="300.0" promptText="e.g Austine" style="-fx-background-color: white; -fx-border-color: lightgray;" />
+            <Label fx:id="lastNameValidationLabel" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="388.0" layoutY="334.0">
+         <children>
+            <Label text="Gender">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="genderChoiceBox" focusTraversable="false" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: lightgray;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
+            <Label fx:id="genderValidationLabel" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="388.0" layoutY="273.0">
+         <children>
+            <Label text="User Name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameTextField" focusTraversable="false" prefHeight="25.0" prefWidth="300.0" promptText="e.g CodeWizard" style="-fx-background-color: white; -fx-border-color: lightgray;" />
+            <Label fx:id="userNameValidationLabel" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Hyperlink fx:id="existingAccountHyperLink" layoutX="471.0" layoutY="430.0" onAction="#existingAccountHyperLinkPressed" text="Use Already Existing Account" textFill="#459e2a" underline="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Hyperlink>
+      <FontAwesomeIcon fx:id="backArrowIcon" fill="#459e2a" glyphName="ARROW_CIRCLE_LEFT" layoutX="1.0" layoutY="161.0" onMouseClicked="#backArrowIconPressed" size="2.9em">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+      <ImageView fx:id="quoteImage" fitHeight="141.0" fitWidth="319.0" layoutX="22.0" layoutY="187.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/Signup%20quote.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.HomepageController">
+   <children>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="145.0" prefWidth="700.0" style="-fx-background-color: #459e2a;" text="1469 CBT SYSTEM" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="56.0" />
+         </font>
+      </Label>
+      <Button fx:id="newAccountButton" focusTraversable="false" layoutX="486.0" layoutY="229.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#newAccountButtonPressed" prefHeight="58.0" prefWidth="213.0" style="-fx-background-color: #459e2a;" text="CREATE NEW ACCOUNT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets left="5.0" />
+         </padding></Button>
+      <Button fx:id="existingAccountButton" focusTraversable="false" layoutX="486.0" layoutY="320.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#existingAccountButtonPressed" prefHeight="58.0" prefWidth="213.0" style="-fx-background-color: #459e2a;" text="USE EXISTING ACCOUNT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets left="5.0" />
+         </padding></Button>
+      <VBox layoutX="47.0" layoutY="198.0" prefHeight="200.0" prefWidth="100.0" />
+      <FontAwesomeIcon fill="WHITE" glyphName="USER_PLUS" layoutX="495.0" layoutY="269.0" size="2.3em">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+      <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="495.0" layoutY="359.0" size="2.3em">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+      <ImageView fx:id="quoteImage" fitHeight="233.0" fitWidth="364.0" layoutX="21.0" layoutY="182.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/Homepage%20quote.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="271.0" layoutY="483.0" text="Powered by Kayyleb 148 Creatives" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="quitButton" focusTraversable="false" layoutX="333.0" layoutY="469.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#quitButtonPressed" prefHeight="28.0" prefWidth="84.0" style="-fx-background-color: #459e2a;" text="QUIT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Button>
+   </children>
+</AnchorPane>
